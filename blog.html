@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <title>Blog</title>
+</head>
+<body>
+<nav class="header-nav">
+    <div class="logo">Fezai Tech</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="index.html" onclick="toggleMenu()">Ana Sayfa</a></li>
+            <li><a href="index.html#works" onclick="toggleMenu()">İşlerimiz</a></li>
+            <li><a href="index.html#experience" onclick="toggleMenu()">Hakkımızda</a></li>
+            <li><a href="index.html#communication" onclick="toggleMenu()">İletişim</a></li>
+            <li>
+                <img
+                        id="modeToggle"
+                        class="icon color-icon"
+                        src="./assets/theme_light.png"
+                        src-light="./assets/theme_light.png"
+                        src-dark="./assets/theme_dark.png"
+                        alt="Color them icon"
+                />
+            </li>
+            <li> <div id="languageToggle" onclick="toggleLanguage()" data-translate="language">TR</div></li>
+        </ul>
+    </div>
+</nav>
+<nav id="hamburger-nav">
+    <div class="logo">Fezai Tech</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="index.html" onclick="toggleMenu()">Ana Sayfa</a></li>
+            <li><a href="index.html#works" onclick="toggleMenu()">İşlerimiz</a></li>
+            <li><a href="index.html#experience" onclick="toggleMenu()">Hakkımızda</a></li>
+            <li><a href="index.html#communication" onclick="toggleMenu()">İletişim</a></li>
+            <li><div class="hamburger-container">
+                <a id="languageToggle2" onclick="toggleLanguage()" data-translate="language">TR</a>
+            </div></li>
+            <li>
+                <img
+                        id="modeToggle2"
+                        class="icon color-icon"
+                        src="./assets/theme_light.png"
+                        src-light="./assets/theme_light.png"
+                        src-dark="./assets/theme_dark.png"
+                        alt="Color them icon"/>
+            </li>
+        </div>
+    </div>
+</nav>
+<section id="blog">
+    <div class="blog__title">
+        <p class="blog__text__p1">Blog</p>
+        <p class="blog__text__p2">Henüz bir içerik eklenmemiş</p>
+    </div>
+</section>
+
+<section id="footer">
+    <div class="logo__social">
+        <img src="assets/logo_dark.png"
+             src-light="./assets/logo_dark.png"
+             src-dark="./assets/logo_dark.png"
+             alt="Logo" class="footer-logo" />
+        <div class="social">
+            <div class="social__text">Sosyal Medya Hesaplarımız</div>
+            <div class="social__logo">
+                <img
+                        src="./assets/instagram.png"
+                        alt="LinkedIn"
+                        class="social__container"
+                        onclick="location.href='https://linkedin.com/'"
+                />
+                <img
+                        src="./assets/x.png"
+                        alt="LinkedIn"
+                        class="social__container"
+                        onclick="location.href='https://linkedin.com/'"
+                />
+                <img
+                        src="./assets/facebook.png"
+                        alt="LinkedIn"
+                        class="social__container"
+                        onclick="location.href='https://linkedin.com/'"
+                />
+                <img
+                        src="./assets/linkedin.png"
+                        alt="LinkedIn"
+                        class="social__container"
+                        onclick="location.href='https://linkedin.com/'"
+                />
+            </div>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Bize Ulaşın
+            </button>
+        </div>
+    </div>
+
+    <div class="sub">
+        <div class="sub__text">Yeniliklerden ve blog yazılarından ilk siz haberdar olun.</div>
+        <div class="email-form">
+            <label for="email"></label><input type="email" id="email" name="email" class="email-input" placeholder="Bu alana e-posta adresinizi girebilirsiniz" required>
+            <button type="submit" class="submit-button">Bültene Kaydol</button>
+        </div>
+        <div class="sub__container p2">
+            <div class="sub__container">
+                <img
+                        src="./assets/mail.png"
+                        alt="Email icon"
+                        class="icon__theme__not"
+                />
+                <div class="sub__text">fezaitech@gmail.com</div>
+            </div>
+            <div class="sub__container">
+                <img
+                        src="./assets/location.png"
+                        alt="Location icon"
+                        class="icon__theme__not"
+                />
+                <div class="sub__text">Atakum / Samsun</div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <nav class="footer-nav">
+        <ul class="nav-links">
+            <li><a href="index.html" onclick="toggleMenu()">Ana Sayfa</a></li>
+            <li><a href="index.html#products" onclick="toggleMenu()">İşlerimiz</a></li>
+            <li><a href="index.html#experience" onclick="toggleMenu()">Hakkımızda</a></li>
+            <li><a href="index.html#communication" onclick="toggleMenu()">İletişim</a></li>
+        </ul>
+        <div class="nav-links"> <p class="copyright-text">Copyright &#169; 2024 Fezai Tech. Tüm Hakları Saklıdır.</p></div>
+    </nav>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
