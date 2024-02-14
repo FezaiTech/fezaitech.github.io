@@ -52,9 +52,6 @@
   padding: 0;
 }
 
-h3 {
-  color: var(--secondary-color);
-}
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -89,7 +86,7 @@ nav,
 nav {
   justify-content: space-between;
   padding: 0 24px 0 24px;
-  height: 12vh;
+  height: 12ch;
 }
 
 .header-nav {
@@ -262,7 +259,7 @@ nav a:hover {
 /* SECTIONS */
 
 section {
-  height: 96vh;
+  height: 80ch;
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -278,7 +275,7 @@ section {
 
 #profile {
   background-size: cover;
-  height: 85vh;
+  height: 64ch;
   width: auto;
   padding: 0 48px 0 72px;
   background-image: url("./assets/grid-light.png");
@@ -373,7 +370,7 @@ section {
 
 #about {
   position: relative;
-  height: 85vh;
+  height: 70ch;
   width: auto;
   align-items: center;
   display: flex;
@@ -480,7 +477,7 @@ section {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 85vh;
+  height: 64ch;
   width: auto;
 }
 
@@ -523,7 +520,7 @@ section {
 
 .experience-container{
   width: 100%;
-  height: 76vh;
+  height: 76ch;
   background-position: right;
   background-size: 25%;
   background-image: url("./assets/we-light.png");
@@ -539,13 +536,13 @@ section {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 85vh;
+  height: 78ch;
   width: auto;
 }
 
 .works-container{
   width: 95%;
-  height: 76vh;
+  height: 66ch;
   border-radius: 12px;
   background-color: var(--primary-color-5);
   background-image: url("assets/digits-light.png");
@@ -583,7 +580,7 @@ section {
 }
 
 .works__text__logo {
-  width: 39vh;
+  width: 100%;
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -607,8 +604,8 @@ section {
 }
 
 .works-container-mini{
-  width: 40vh;
-  height: 40vh;
+  width: 28ch;
+  height: 28ch;
   border-radius: 32px;
   padding: 10px 10px;
   background-color: var(--secondary-color-4);
@@ -622,7 +619,7 @@ section {
 /* PRODUCTS */
 
 #products {
-  height: 78vh;
+  height: 52ch;
   display: flex;
   align-items: start;
   justify-content: center;
@@ -639,7 +636,7 @@ section {
 }
 
 .products-info-container-mini {
-  height: 56vh;
+  height: 40ch;
   display: flex;
   align-items: start;
   justify-content: space-between;
@@ -661,10 +658,10 @@ section {
 
 .products-container-color-2{
   background-color: rgb(242, 167, 27);
-  box-shadow: var(--secondary-color-7) 4vh 0 0 -2vh;
-  width: 32vh;
+  box-shadow: var(--secondary-color-7) 4ch 0 0 -2ch;
+  width: 32ch;
   border-radius: 3rem;
-  margin-right: 2vh;
+  margin-right: 2ch;
 }
 
 .products-info-container-mini-icon {
@@ -719,7 +716,7 @@ section {
   bottom: 0;
   left: -58px;
   width: auto;
-  height: 36vh;
+  height: 36ch;
 }
 
 
@@ -727,7 +724,7 @@ section {
 /* FOOTER SECTION */
 
 #footer {
-  height: 36vh;
+  height: 36ch;
   margin: 0 0;
   background-color: rgb(1,31,38);
   min-height: fit-content;
@@ -752,7 +749,7 @@ footer p {
 }
 
 .logo__social {
-  width: 92vh;
+  width: 92ch;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -785,9 +782,9 @@ footer p {
 }
 
 .social__logo {
-  padding-top: 2vh;
-  padding-bottom: 2vh;
-  width: 32vh;
+  padding-top: 2ch;
+  padding-bottom: 2ch;
+  width: 32ch;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -801,7 +798,7 @@ footer p {
   display: flex;
   align-items: center;
   flex-direction: row;
-  gap: 1vh;
+  gap: 1ch;
 }
 
 .sub__container.p2{
@@ -817,8 +814,8 @@ footer p {
 }
 
 .email-form {
-  padding-top: 2vh;
-  padding-bottom: 2vh;
+  padding-top: 2ch;
+  padding-bottom: 2ch;
   border-radius: 8px;
   display: flex;
   flex-direction: row;
@@ -848,7 +845,7 @@ footer p {
 
 
 #about-us {
-  height: 120vh;
+  height: 120ch;
   min-height: fit-content;
   display: flex;
   align-items: center;
@@ -860,13 +857,13 @@ footer p {
 }
 
 #communication {
-  height: 64vh;
+  height: 50ch;
   display: flex;
   justify-content: center;
 }
 
 .communication-container {
-  height: 48vh;
+  height: 44ch;
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -915,7 +912,7 @@ footer p {
 }
 
 #blog{
-  height: 76vh;
+  height: 60ch;
   display: flex;
   align-items: center;
   justify-content: center;
