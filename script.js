@@ -44,9 +44,11 @@ function setDarkMode() {
     icon.src = icon.getAttribute("src-dark");
   });
 
+
   updateBackground("profile", "./assets/grid-dark.png");
   updateBackground("experience-container", "./assets/we-dark.png");
   updateBackground("works-container", "./assets/digits-dark.png");
+
 }
 
 function setLightMode() {

@@ -86,7 +86,7 @@ nav,
 nav {
   justify-content: space-between;
   padding: 0 24px 0 24px;
-  height: 12ch;
+  height: 8ch;
 }
 
 .header-nav {
@@ -361,6 +361,16 @@ section {
   height: 3rem;
 }
 
+.icon__buton {
+  cursor: pointer;
+  height: 3.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.icon__buton.hover:hover {
+  filter: invert(1);
+}
+
 .icon__theme__not {
   cursor: pointer;
   height: 2rem;
@@ -536,16 +546,17 @@ section {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 78ch;
+  height: 72ch;
   width: auto;
 }
 
 .works-container{
   width: 95%;
-  height: 66ch;
+  height: 60ch;
   border-radius: 12px;
   background-color: var(--primary-color-5);
-  background-image: url("assets/digits-light.png");
+  background-image: url("./assets/digits-light.png");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
@@ -585,6 +596,7 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .works__text__p4 {
@@ -593,6 +605,7 @@ section {
   text-align: start;
   font-weight: 400;
   color: var(--primary-color);
+  z-index: 1;
 }
 
 .works-container-detail{
@@ -616,6 +629,14 @@ section {
   box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 3px;
 }
 
+.works-background-text{
+  font-size: 6rem;
+  font-weight: 700;
+  color: white;
+  opacity: 50%;
+  position: absolute;
+}
+
 /* PRODUCTS */
 
 #products {
@@ -633,6 +654,28 @@ section {
   justify-content: center;
   gap: 2rem;
   flex-direction: row;
+}
+.products-row{
+  width: 100%;
+  display: flex;
+  gap: 1ch;
+  flex-direction: row;
+  justify-content: end;
+}
+.products-button-container{
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+  border-radius: 1rem;
+  padding: 6px;
+}
+
+.products-button-container:hover{
+  background-color: rgb(242,167,27);
+  box-shadow: inset 0 0 0 2px white;
 }
 
 .products-info-container-mini {
@@ -670,7 +713,6 @@ section {
   align-items: end;
   justify-content: end;
   flex-direction: row;
-  z-index: 1;
 }
 
 .products-background-image-1{
@@ -691,7 +733,6 @@ section {
   text-align: start;
   font-weight: 700;
   color: white;
-  z-index: 1;
 }
 
 .products__text__p2 {
@@ -700,7 +741,6 @@ section {
   text-align: start;
   font-weight: 400;
   color: white;
-  z-index: 1;
 }
 
 #icon1 {
@@ -749,10 +789,10 @@ footer p {
 }
 
 .logo__social {
-  width: 92ch;
+  width: 50%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
