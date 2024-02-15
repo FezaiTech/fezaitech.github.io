@@ -1,10 +1,6 @@
 @media screen and (max-width: 1400px) {
   #profile {
-    height: 83ch;
-    margin-bottom: 6rem;
-  }
-  .about-containers {
-    flex-wrap: wrap;
+    height: 80ch;
   }
 }
 
@@ -62,8 +58,6 @@
     font-size: 1.2rem;
   }
 
-
-
   .works__text__p4 {
     font-size: 1.1rem;
   }
@@ -78,29 +72,8 @@
     border-radius: 12px;
   }
 
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
-  #profile,
-  .section-container {
-    display: flex;
-  }
   .arrow {
     display: none;
-  }
-  section,
-  .section-container {
-    height: fit-content;
-  }
-
-  .section__pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
-  }
-  .about-containers {
-    margin-top: 0;
   }
 
   #footer {
@@ -113,7 +86,6 @@
     width: 100%;
     justify-content: space-around;
   }
-
 
   .footer-logo {
     width: 120px;
@@ -196,8 +168,6 @@
     height: 42ch;
     border-radius: 12px;
   }
-
-
 
   .copyright-text {
     font-size: 0.75rem;
@@ -302,7 +272,7 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 85ch;
+    height: 68ch;
     width: auto;
   }
 
@@ -366,8 +336,8 @@
   }
 
   .works-container-mini{
-    width: 28ch;
-    height: 28ch;
+    width: 24ch;
+    height: 24ch;
     border-radius: 16px;
   }
 
@@ -514,7 +484,7 @@
   }
 
   #experience{
-    height: 72ch;
+    height: 64ch;
 
   }
 
@@ -824,5 +794,3 @@
   }
 
 }
-
-

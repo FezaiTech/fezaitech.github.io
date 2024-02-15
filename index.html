@@ -7,6 +7,7 @@
   <title>Fezai Tech</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="icon" type="image/x-icon" href="/assets/favicon0.ico">
 </head>
 <body>
 <nav class="header-nav">
@@ -19,12 +20,12 @@
       <li><a href="#communication">İletişim</a></li>
       <li>
         <img
-            id="modeToggle"
-            class="icon color-icon"
-            src="./assets/theme_light.png"
-            src-light="./assets/theme_light.png"
-            src-dark="./assets/theme_dark.png"
-            alt="Color them icon"
+                id="modeToggle"
+                class="icon color-icon"
+                src="./assets/theme_light.png"
+                src-light="./assets/theme_light.png"
+                src-dark="./assets/theme_dark.png"
+                alt="Color them icon"
         />
       </li>
       <li> <div id="languageToggle" onclick="toggleLanguage()" data-translate="language">TR</div></li>
@@ -68,7 +69,7 @@
   </div>
   <div class="section__text__button">
     <p class="section__text__p3">Sizlere Yönelik<br>Dijital Çözümlerimiz<br>İle Fikirleriniz<br>Gerçek Olsun</p>
-    <button class="btn btn-color-1" onclick="location.href='./contact.html'">
+    <button class="btn btn-color-1" onclick="location.href='#communication'">
       Ücretsiz Teklif Alın
     </button>
   </div>
@@ -144,7 +145,7 @@
 </section>
 
 <section id="experience">
-  <div class="experience-container">
+  <div class="experience-container" id="experience-container">
     <p class="experience__text__p1">Fezai Tech</p>
     <p class="experience__text__p2">Dijital Çözümleri İle</p>
     <p class="experience__text__p3">İşinize Değer Katın</p><br><br>
@@ -155,7 +156,7 @@
 </section>
 
 <section id="works">
-  <div class="works-container">
+  <div class="works-container" id="works-container">
     <div>
       <p class="works__text__p1">Nasıl Çalışırız ?</p><br>
       <p class="works__text__p2">Fikirlerinizi Nasıl Gerçeğe Dönüştürüyoruz?</p>
@@ -167,6 +168,7 @@
           <img src="./assets/search.png" alt="Search icon" class="icon__large" />
         </div>
         <p class="works__text__p4">Projenizle ilgili saha araştırması ve detaylı analizle, projenizi benzer projelerden ayırıp öne çıkaracak sonuçlara ulaşırız.</p>
+        <div class="works-background-text">1</div>
       </div>
       <div class="works-container-mini">
         <div class="works__text__logo">
@@ -174,6 +176,7 @@
           <img src="./assets/product.png" alt="Product icon" class="icon__large" />
         </div>
         <p class="works__text__p4">Başarılı ekibimiz tarafından projenize dair arayüzün yapısını eksiksiz ve kullanıma hazır biçimde oluşturup yazılımı tamamlarız.</p>
+        <div class="works-background-text">2</div>
       </div>
       <div class="works-container-mini">
         <div class="works__text__logo">
@@ -181,6 +184,7 @@
           <img src="./assets/test.png" alt="Search icon" class="icon__large" />
         </div>
         <p class="works__text__p4">Oluşturulan projeyi testlere sokup tamamlandığını düşündüğümüzde sizin de onayınızın ardından dijital dünyada yayına çıkarırız.</p>
+        <div class="works-background-text">3</div>
       </div>
     </div>
   </div>
@@ -189,12 +193,32 @@
 <section id="products">
   <div class="products-info">
     <div class="products-info-container-mini products-container-color-1 products-background-image-1" id="box1">
-        <p class="products__text__p1">Bütçe Takip</p>
-        <p class="products__text__p2" id="bt-text">Bu uygulama sayesinde bireysel bütçenizi veya ticari hesaplarınızı
-      kontrol altında tutabilirsiniz. Gelir veya giderlerinizi kaydederek işlemlerinizi kolayca takip edebilirsiniz.<br><br>
-      Bütçe Takip ile gelir ve giderlerinizi kategorilere göre kaydederek anlık olarak istatiksel analizini yapabilir,
-      işlemleri karşılaştırabilir ve bu sayede paranızın cebinizde kalmasını sağlayabilirsiniz.</p>
-        <div class="products-info-container-mini-icon" id="box1_h">
+      <p class="products__text__p1">Bütçe Takip</p>
+      <p class="products__text__p2" id="bt-text">Bu uygulama sayesinde bireysel bütçenizi veya ticari hesaplarınızı
+        kontrol altında tutabilirsiniz. Gelir veya giderlerinizi kaydederek işlemlerinizi kolayca takip edebilirsiniz.<br><br>
+        Bütçe Takip ile gelir ve giderlerinizi kategorilere göre kaydederek anlık olarak istatiksel analizini yapabilir,
+        işlemleri karşılaştırabilir ve bu sayede paranızın cebinizde kalmasını sağlayabilirsiniz.</p>
+      <div class="products-row">
+        <div class="products-button-container">
+          <img src="./assets/play_store.png"
+               src-light="./assets/play_store.png"
+               src-dark="./assets/play_store.png"
+               alt="PlayStore BütçeTakip"
+               class="icon__buton"
+               onclick="window.open('https://play.google.com/store/apps/details?id=com.fezaitech.butcetakip', '_blank')"/>
+        </div>
+
+        <div class="products-button-container">
+          <img src="./assets/github_light.png"
+               src-light="./assets/github_light.png"
+               src-dark="./assets/github.png"
+               alt="Github BütçeTakip"
+               class="icon__buton hover"
+               onclick="window.open('https://github.com/ibrahimeth/ButceTakip', '_blank')"/>
+        </div>
+
+      </div>
+      <div class="products-info-container-mini-icon" id="box1_h">
         <img src="./assets/link-arrow-light.png"
              src-light="./assets/link-arrow-light.png"
              src-dark="./assets/link-arrow-dark.png"
@@ -204,6 +228,16 @@
     <div class="products-info-container-mini products-container-color-2" id="box2" >
       <p class="products__text__p1">Task Jam</p>
       <p class="products__text__p2" id="tj-text">Bu masaüstü yazılımı sayesinde çok yönlü<br>görev yönetimi yapılabilmektedir.</p>
+      <div class="products-row">
+        <div class="products-button-container">
+          <img src="./assets/github_light.png"
+               src-light="./assets/github_light.png"
+               src-dark="./assets/github.png"
+               alt="Github TaskJam"
+               class="icon__buton hover"
+               onclick="window.open('https://github.com/Hamza-Bayar-2/TaskJam', '_blank')"/>
+        </div>
+      </div>
       <div class="products-info-container-mini-icon" id="box2_h">
         <img src="./assets/link-arrow-light.png"
              src-light="./assets/link-arrow-light.png"
@@ -214,6 +248,16 @@
     <div class="products-info-container-mini products-container-color-2" id="box3" >
       <p class="products__text__p1">Tedarikten</p>
       <p class="products__text__p2" id="ta-text">Sanayi Sektörüne Yönelik Tedarik – Tedarikçi Mobil Uygulaması</p>
+      <div class="products-row">
+        <div class="products-button-container">
+          <img src="./assets/github_light.png"
+               src-light="./assets/github_light.png"
+               src-dark="./assets/github.png"
+               alt="Github Tedarikten"
+               class="icon__buton hover"
+               onclick="window.open('https://github.com/zahidayturan/tedarikten-app', '_blank')"/>
+        </div>
+      </div>
       <div class="products-info-container-mini-icon" id="box3_h">
         <img src="./assets/link-arrow-light.png"
              src-light="./assets/link-arrow-light.png"
