@@ -30,20 +30,16 @@
   }
 
   .job-item{
-    width: 9rem;
-    height: 9rem;
+    width: 10.5rem;
+    height: 10.5rem;
     padding: 10px;
   }
 
-  .job-icon{
-    width: 8rem;
-  }
-
   .jobs__text__p1 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
   .jobs__text__p2 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   .works__text__p1 {
@@ -123,12 +119,8 @@
   }
 
   .job-item{
-    width: 7rem;
-    height: 7rem;
-  }
-
-  .job-icon{
-    width: 6rem;
+    width: 8rem;
+    height: 8rem;
   }
 
   .jobs__text__p1 {
@@ -136,6 +128,25 @@
   }
   .jobs__text__p2 {
     font-size: 1rem;
+  }
+
+  .jobs__text__p3 {
+    font-size: 0.7rem;
+  }
+
+  .job-arrow-box{
+    width: 1.75em;
+    height: 1.75rem;
+    border-radius: 50%;
+  }
+
+  .job-arrow-box:hover{
+    width: 1.85rem;
+    height: 1.85rem;
+  }
+
+  .icon__mini{
+    height: 0.8rem;
   }
 
   .works__text__p1 {
@@ -229,12 +240,8 @@
   }
 
   .job-item{
-    width: 8.5rem;
-    height: 8.5rem;
-  }
-
-  .job-icon{
-    width: 7.5rem;
+    width: 10.5rem;
+    height: 10.5rem;
   }
 
   .job-item-color-1 {
@@ -262,10 +269,28 @@
   }
 
   .jobs__text__p1 {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
   }
   .jobs__text__p2 {
-    font-size: 1.25rem;
+    font-size: 1.4rem;
+  }
+
+  .jobs__text__p3 {
+    font-size: 0.9rem;
+  }
+
+  .job-arrow-box{
+    width: 2em;
+    height: 2rem;
+  }
+
+  .job-arrow-box:hover{
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .icon__mini{
+    height: 1rem;
   }
 
   #experience {
@@ -438,8 +463,18 @@
 
 @media screen and (max-width: 420px) {
 
+
+  #about {
+    position: relative;
+    height: 92ch;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
   .jobs-container {
-    width: 12rem;
+    width: 10rem;
+    height: 84ch;
   }
 
   .job-item{
@@ -447,9 +482,6 @@
     height: 7.5rem;
   }
 
-  .job-icon{
-    width: 6.5rem;
-  }
 
   .job-item-color-1 {
     margin-right: 6rem;
@@ -472,6 +504,24 @@
   }
   .jobs__text__p2 {
     font-size: 1.1rem;
+  }
+
+  .jobs__text__p3 {
+    font-size: 0.65rem;
+  }
+
+  .job-arrow-box{
+    width: 1.5em;
+    height: 1.5rem;
+  }
+
+  .job-arrow-box:hover{
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+
+  .icon__mini{
+    height: 0.75rem;
   }
 
 
@@ -562,6 +612,11 @@
 }
 
 @media screen and (max-width: 200px) {
+
+
+  .jobs__text__p3 {
+    font-size: 0.3rem;
+  }
 
   .logo{
     font-size: 1rem;

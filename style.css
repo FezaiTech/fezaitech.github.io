@@ -356,6 +356,15 @@ section {
   height: 2rem;
 }
 
+.icon__mini{
+  height: 1rem;
+}
+
+.icon__default{
+  cursor: default;
+}
+
+
 .icon__large {
   cursor: pointer;
   height: 3rem;
@@ -363,7 +372,7 @@ section {
 
 .icon__buton {
   cursor: pointer;
-  height: 3.5rem;
+  height: 3rem;
   transition: all 0.3s ease-in-out;
 }
 
@@ -404,23 +413,91 @@ section {
 }
 
 .job-item{
-  width: 12rem;
-  height: 12rem;
+  width: 11rem;
+  height: 11rem;
   border-radius: 0.5rem;
-  justify-content: space-around;
-  padding: 12px;
+  justify-content: space-between;
+  padding: 1rem;
+  transition: opacity 0.5s ease-in-out;
 }
 
-.job-text{
-
+.job-item-box{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .job-icon{
-  width: 10.5rem;
-  height: 1.5rem;
+  width: 100%;
+  height: min-content;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: end;
+}
+
+.align-start{
+  align-items: start;
+}
+
+.job-icon-box{
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 8px;
+}
+
+.job-arrow-box{
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color-4);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.job-arrow-box:hover{
+  background-color: var(--primary-color-5);
+  width: 2.25rem;
+  height: 2.25rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 14px 28px, rgba(0, 0, 0, 0.22) 0 10px 10px;
+}
+
+.job-icon-box-in{
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 12px;
+  background-color: rgb(1,31,38);
+}
+
+.job-icon-box-out{
+  position: absolute;
+}
+
+.top-left{
+  top: 0;
+  left: 0;
+}
+
+.top-right{
+  top: 0;
+  right: 0;
+}
+
+.bottom-right{
+  bottom: 0;
+  right: 0;
+}
+
+.bottom-left{
+  bottom: 0;
+  left: 0;
 }
 
 .job-item-color-1 {
@@ -430,6 +507,7 @@ section {
   background-color: rgb(15,194,192);
   transform: rotate(-6deg);
   box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 3px;
+  transition: all 0.2s ease-in-out;
 }
 
 .job-item-color-2 {
@@ -462,24 +540,30 @@ section {
 .jobs__text__p1 {
   font-weight: 700;
   font-size: 1.5rem;
-  flex: 1;
+
   text-align: start;
   font-style: normal;
   color: var(--primary-color);
 }
 .jobs__text__p2 {
   font-size: 1.5rem;
-  flex: 1;
+
   text-align: start;
   font-style: normal;
   color: var(--primary-color);
 }
 
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
+#job-e-1,#job-e-2,#job-e-4,#job-e-3 {
+  display: none;
 }
+
+.jobs__text__p3 {
+  font-size: 0.95rem;
+  text-align: start;
+  font-style: normal;
+  color: var(--primary-color);
+}
+
 
 /* EXPERIENCE SECTION */
 
