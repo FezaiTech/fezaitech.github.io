@@ -77,70 +77,164 @@
 
 <section id="about">
   <div class="jobs-container">
-    <div class="job-item job-item-color-1">
-      <div class="job-item job-text">
-        <p class="jobs__text__p1">Mobil<br>Uygulama<br></p>
-        <p class="jobs__text__p2">Hizmeti</p>
+
+
+    <div class="job-item job-item-color-1" id="job-item-color-1">
+      <div class="job-item-box" id="job-1">
+        <div class="job-text">
+          <p class="jobs__text__p1">Mobil<br>Uygulama<br></p>
+          <p class="jobs__text__p2">Hizmeti</p>
+        </div>
+        <div class="job-icon">
+          <div class="job-icon-box">
+            <div class="job-icon-box-in bottom-left "></div>
+            <div class="job-icon-box-out top-right">
+              <img    src="assets/mobile.png"
+                      src-light="./assets/mobile.png"
+                      src-dark="./assets/mobile.png"
+                      alt="Mobile icon" class="icon icon__default" />
+            </div>
+          </div>
+          <div class="job-arrow-box" onclick="changeJobTextVisible(1)">
+            <img src="./assets/arrow-light.png"
+                 src-light="./assets/arrow-light.png"
+                 src-dark="./assets/arrow-dark.png"
+                 alt="Arrow icon" class="icon icon__mini" />
+          </div>
+        </div>
       </div>
-      <div class="job-item job-icon">
-        <img    src="assets/mobile.png"
-                src-light="./assets/mobile.png"
-                src-dark="./assets/mobile.png"
-                alt="Mobile icon" class="icon" />
-        <img src="./assets/link-arrow-light.png"
-             src-light="./assets/link-arrow-light.png"
-             src-dark="./assets/link-arrow-dark.png"
-             alt="Link Arrow icon" class="icon" />
-      </div>
-    </div>
-    <div class="job-item job-item-color-2">
-      <div class="job-item job-icon">
-        <img src="./assets/web.png"
-             src-light="./assets/web.png"
-             src-dark="./assets/web.png"
-             alt="Web icon" class="icon" />
-        <img src="./assets/link-arrow-light.png"
-             src-light="./assets/link-arrow-light.png"
-             src-dark="./assets/link-arrow-dark.png"
-             alt="Link Arrow icon" class="icon" />
-      </div>
-      <div class="job-item job-text">
-        <p class="jobs__text__p1">Web<br>Tasarım<br></p>
-        <p class="jobs__text__p2">Hizmeti</p>
-      </div>
-    </div>
-    <div class="job-item job-item-color-4">
-      <div class="job-item job-text">
-        <p class="jobs__text__p1">UI/UX<br>Tasarım<br></p>
-        <p class="jobs__text__p2">Hizmeti</p>
-      </div>
-      <div class="job-item job-icon">
-        <img src="./assets/uıux.png"
-             src-light="./assets/uıux.png"
-             src-dark="./assets/uıux.png"
-             alt="UıUx icon" class="icon" />
-        <img src="./assets/link-arrow-light.png"
-             src-light="./assets/link-arrow-light.png"
-             src-dark="./assets/link-arrow-dark.png"
-             alt="Link Arrow icon" class="icon" />
+      <div class="job-item-box" id="job-e-1">
+        <div class="job-explanation-text">
+          <p class="jobs__text__p3">Mobil uygulama fikrinizi baştan sona en yeni teknolojiler ile, bütün sürece sizi de dahil ederek hazırlıyor ve size teslim ediyoruz.</p>
+        </div>
+        <div class="job-icon">
+          <div class="job-arrow-box" onclick="changeJobTextVisible(1)">
+            <img src="./assets/arrow-light.png"
+                 src-light="./assets/arrow-light.png"
+                 src-dark="./assets/arrow-dark.png"
+                 alt="Arrow icon" class="icon icon__mini" />
+          </div>
+        </div>
       </div>
     </div>
-    <div class="job-item job-item-color-3">
-      <div class="job-item job-icon">
-        <img src="./assets/technic.png"
-             src-light="./assets/technic.png"
-             src-dark="./assets/technic.png"
-             alt="Technic icon" class="icon" />
-        <img src="./assets/link-arrow-light.png"
-             src-light="./assets/link-arrow-light.png"
-             src-dark="./assets/link-arrow-dark.png"
-             alt="Link Arrow icon" class="icon" />
+
+    <div class="job-item job-item-color-2" id="job-item-color-2">
+      <div class="job-item-box" id="job-2">
+        <div class="job-icon align-start">
+          <div class="job-icon-box">
+            <div class="job-icon-box-in top-left"></div>
+            <div class="job-icon-box-out bottom-right">
+              <img src="./assets/web.png"
+                   src-light="./assets/web.png"
+                   src-dark="./assets/web.png"
+                   alt="Web icon" class="icon" />
+            </div>
+          </div>
+          <div class="job-arrow-box" onclick="changeJobTextVisible(2)">
+            <img src="./assets/arrow-light.png"
+                 src-light="./assets/arrow-light.png"
+                 src-dark="./assets/arrow-dark.png"
+                 alt="Arrow icon" class="icon icon__mini" />
+          </div>
+        </div>
+        <div class="job-text">
+          <p class="jobs__text__p1">Web<br>Tasarım<br></p>
+          <p class="jobs__text__p2">Hizmeti</p>
+        </div>
       </div>
-      <div class="job-item job-text">
-        <p class="jobs__text__p1">Teknik<br>Destek<br></p>
-        <p class="jobs__text__p2">Hizmeti</p>
+      <div class="job-item-box" id="job-e-2">
+        <div class="job-explanation-text">
+          <p class="jobs__text__p3">Kurumsal veya kişisel web sitesi haricinde, fikrinize yönelik web sitesini yenilikçi düşüncelerle hazırlıyor ve size teslim ediyoruz.</p>
+        </div>
+        <div class="job-icon align-start">
+          <div class="job-arrow-box" onclick="changeJobTextVisible(2)">
+            <img src="./assets/arrow-light.png"
+                 src-light="./assets/arrow-light.png"
+                 src-dark="./assets/arrow-dark.png"
+                 alt="Arrow icon" class="icon icon__mini" />
+          </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="job-item job-item-color-4" id="job-item-color-4">
+      <div class="job-item-box" id="job-4">
+        <div class="job-text">
+          <p class="jobs__text__p1">UI/UX<br>Tasarım<br></p>
+          <p class="jobs__text__p2">Hizmeti</p>
+        </div>
+        <div class="job-icon">
+          <div class="job-icon-box">
+            <div class="job-icon-box-in bottom-left"></div>
+            <div class="job-icon-box-out top-right">
+              <img src="./assets/uıux.png"
+                   src-light="./assets/uıux.png"
+                   src-dark="./assets/uıux.png"
+                   alt="Web icon" class="icon" />
+            </div>
+          </div>
+          <div class="job-arrow-box" onclick="changeJobTextVisible(4)">
+            <img src="./assets/arrow-light.png"
+                 src-light="./assets/arrow-light.png"
+                 src-dark="./assets/arrow-dark.png"
+                 alt="Arrow icon" class="icon icon__mini" />
+          </div>
+        </div>
+      </div>
+      <div class="job-item-box" id="job-e-4">
+        <div class="job-explanation-text">
+          <p class="jobs__text__p3">Dilediğiniz platformlara yönelik, tamamen kullanıcı dostu ve özgün fikirlerle hazırlanmış tasarımları size teslim ediyoruz.</p>
+        </div>
+        <div class="job-icon align-start">
+          <div class="job-arrow-box" onclick="changeJobTextVisible(4)">
+            <img src="./assets/arrow-light.png"
+                 src-light="./assets/arrow-light.png"
+                 src-dark="./assets/arrow-dark.png"
+                 alt="Arrow icon" class="icon icon__mini" />
+          </div>
+        </div>
       </div>
     </div>
+
+    <div class="job-item job-item-color-3" id="job-item-color-3">
+      <div class="job-item-box" id="job-3">
+        <div class="job-icon align-start">
+          <div class="job-icon-box">
+            <div class="job-icon-box-in top-left"></div>
+            <div class="job-icon-box-out bottom-right">
+              <img src="./assets/technic.png"
+                   src-light="./assets/technic.png"
+                   src-dark="./assets/technic.png"
+                   alt="Web icon" class="icon" />
+            </div>
+          </div>
+          <div class="job-arrow-box" onclick="changeJobTextVisible(3)">
+            <img src="./assets/arrow-light.png"
+                 src-light="./assets/arrow-light.png"
+                 src-dark="./assets/arrow-dark.png"
+                 alt="Arrow icon" class="icon icon__mini" />
+          </div>
+        </div>
+        <div class="job-text">
+          <p class="jobs__text__p1">Teknik<br>Destek<br></p>
+          <p class="jobs__text__p2">Hizmeti</p>
+        </div>
+      </div>
+      <div class="job-item-box" id="job-e-3">
+        <div class="job-explanation-text">
+          <p class="jobs__text__p3">Hizmetlerimiz dahilinde veya yayın süreçlerinde yaşanan sorunlara hızlı bir şekilde teknik ve pratik çözümler üretiyoruz.</p>
+        </div>
+        <div class="job-icon align-start">
+          <div class="job-arrow-box" onclick="changeJobTextVisible(3)">
+            <img src="./assets/arrow-light.png"
+                 src-light="./assets/arrow-light.png"
+                 src-dark="./assets/arrow-dark.png"
+                 alt="Arrow icon" class="icon icon__mini" />
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 

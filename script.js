@@ -219,3 +219,19 @@ function changeClass(mode) {
     changeIconVisible(3);
   }
 }
+
+function changeJobTextVisible(mode) {
+  const container = document.getElementById(`job-${mode}`);
+  const container_e = document.getElementById(`job-e-${mode}`);
+  const box = document.getElementById(`job-item-color-${mode}`);
+
+  if(container.style.display === "none"){
+    container.style.display = "flex";
+    container_e.style.display = "none";
+    box.style.backgroundColor = "";
+  } else {
+    container.style.display = "none";
+    container_e.style.display = "flex";
+    box.style.backgroundColor = "rgb(242,167,27)";
+  }
+}
