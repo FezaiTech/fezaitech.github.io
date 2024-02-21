@@ -117,7 +117,8 @@ nav li:last-child {
   width: max-content;
   display: flex;
   margin: auto;
-  padding: 10px;
+  padding-bottom: 6px;
+  padding-top: 2px;
 }
 
 a {
@@ -517,6 +518,7 @@ section {
   background-color: rgb(12,171,168);
   transform: rotate(4deg);
   box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 3px;
+  transition: all 0.2s ease-in-out;
 }
 
 .job-item-color-3 {
@@ -526,6 +528,7 @@ section {
   background-color: rgb(1,89,88);
   transform: rotate(6deg);
   box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 3px;
+  transition: all 0.2s ease-in-out;
 }
 
 .job-item-color-4 {
@@ -535,19 +538,18 @@ section {
   background-color: rgb(0,143,140);
   transform: rotate(-2deg);
   box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 3px;
+  transition: all 0.2s ease-in-out;
 }
 
 .jobs__text__p1 {
   font-weight: 700;
   font-size: 1.5rem;
-
   text-align: start;
   font-style: normal;
   color: var(--primary-color);
 }
 .jobs__text__p2 {
   font-size: 1.5rem;
-
   text-align: start;
   font-style: normal;
   color: var(--primary-color);
@@ -726,9 +728,9 @@ section {
 #products {
   height: 52ch;
   display: flex;
-  align-items: start;
-  justify-content: center;
-
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
 .products-info{
@@ -801,14 +803,24 @@ section {
 
 .products-background-image-1{
   background-image: url("assets/bt-image-1.png");
+  background-position: left bottom;
 }
 
 .products-background-image-2{
-
+  background-image: url("assets/tj-image-1.png");
+  background-position: center bottom;
 }
 
 .products-background-image-3{
+  background-image: url("assets/ta-image-1.png");
+  background-position: right bottom;
+}
 
+.products__text__h {
+  font-size: 2.25rem;
+  text-align: center;
+  font-weight: 700;
+  color: var(--secondary-color-5);
 }
 
 .products__text__p1 {
@@ -825,6 +837,19 @@ section {
   text-align: start;
   font-weight: 400;
   color: white;
+}
+
+
+#bt-text-mini{
+  display: none;
+}
+
+#tj-text{
+  display: none;
+}
+
+#ta-text{
+  display: none;
 }
 
 #icon1 {
@@ -908,10 +933,10 @@ footer p {
 .social__logo {
   padding-top: 2ch;
   padding-bottom: 2ch;
-  width: 32ch;
+  width: 28ch;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .sub {
