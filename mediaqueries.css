@@ -99,9 +99,11 @@
   .social__logo {
     width: 28ch;
   }
+
 }
 
 @media screen and (max-width: 800px) {
+
   .section__text__p1 {
     font-size: 2.25rem;
   }
@@ -116,6 +118,10 @@
 
   .btn {
     font-size: 0.75rem;
+  }
+
+  .products__text__p2 {
+    font-size: 0.65rem;
   }
 
   .job-item{
@@ -291,6 +297,10 @@
 
   .icon__mini{
     height: 1rem;
+  }
+
+  .products__text__p2 {
+    font-size: 1rem;
   }
 
   #experience {
@@ -531,6 +541,10 @@
 
   .works__text__p1 {
     font-size: 2.5rem;
+  }
+
+  .products__text__p2 {
+    font-size: 0.9rem;
   }
 
   #experience{

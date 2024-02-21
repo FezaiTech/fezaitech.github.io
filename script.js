@@ -116,20 +116,28 @@ function setLanguage(language) {
 
 
 function changeText(mode) {
-  const bt_text = document.getElementById('bt-text');
-  const tj_text = document.getElementById('tj-text');
+  const textElements = [
+    { normal: 'bt-text', mini: 'bt-text-mini' },
+    { normal: 'tj-text', mini: 'tj-text-mini' },
+    { normal: 'ta-text', mini: 'ta-text-mini' }
+  ];
 
-  if (mode === 1) {
-    bt_text.innerHTML = "Bu uygulama sayesinde bireysel bütçenizi veya ticari hesaplarınızı kontrol altında tutabilirsiniz." +
-        "Gelir veya giderlerinizi kaydederek işlemlerinizi kolayca takip edebilirsiniz.<br><br>Bütçe Takip ile gelir ve giderlerinizi" +
-        "kategorilere göre kaydederek anlık olarak istatiksel analizini yapabilir, işlemleri karşılaştırabilir ve bu sayede paranızın" +
-        "cebinizde kalmasını sağlayabilirsiniz.";
-  } else if(mode === 2) {
-    bt_text.innerHTML = "Bu uygulama sayesinde bireysel bütçenizi veya ticari hesaplarınızı kontrol altında tutabilirsiniz.";
-  } else{
-    bt_text.innerHTML = "Bu mobil uygulama sayesinde bireysel bütçenizi veya ticari hesaplarınızı kontrol altında tutabilirsiniz.";
+  for (let i = 0; i < textElements.length; i++) {
+    const { normal, mini } = textElements[i];
+    const normalElement = document.getElementById(normal);
+    const miniElement = document.getElementById(mini);
+
+    if (i + 1 === mode) {
+      normalElement.style.display = "block";
+      miniElement.style.display = "none";
+    } else {
+      normalElement.style.display = "none";
+      miniElement.style.display = "block";
+    }
   }
 }
+
+
 
 function changeIconVisible(mode) {
   const icon_1 = document.getElementById('icon1');
